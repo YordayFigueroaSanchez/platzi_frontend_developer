@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectores combinadores</title>
+    <style>
+        div p {
+            color: lime;
+        }
+        div > div {
+            background: plum;
+        }
+        .es {
+            background: red;
+        }
+        div + section {
+            color: palevioletred;
+        }
+        div ~ p {
+            color:powderblue
+        }
+    </style>
+</head>
+<body>
+    <div>
+        selectores combinadores
+        <ul>
+            <li>descendientes div p</li>
+            <li>hijo directo div > p</li>
+            <li>elemento adyacente div + p</li>
+            <li>general de hermanos div ~ p</li>
+        </ul>
+    </div>
+    <div>
+        <div>
+            <p>Platzi</p>
+            <p class="es">Es</p>
+            <p>Increible</p>
+        </div>
+        <div>
+            espacio div
+        </div>
+        <section>
+            espacio section
+        </section>
+    </div>
+    
+</body>
+</html>
